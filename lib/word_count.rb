@@ -1,12 +1,14 @@
 class String
   define_method(:word_count) do |phrase|
-    words = self.downcase!().split()
-    phrase_array = phrase.split()
-    if words.include?(phrase)
+    words = self.downcase!()
+    divided_phrase = phrase.split()
+    if words.include?(divided_phrase)
       words.count(phrase)
     else
       0
     end
+  end
+end
 
 
     # compare_array = []
@@ -17,8 +19,7 @@ class String
     # else
     #   0
     # end
-  end
-end
+
 
 
 # word_array = []

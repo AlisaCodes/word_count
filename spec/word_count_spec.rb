@@ -13,7 +13,7 @@ describe("String#word_count") do
   # end
 
   it("counts how many times single/multiple word/words in a second inputted set of string matches a word in the first input") do
-    expect(("Make it work work work work").word_count("work")).to(eq(4))
+    expect(("Make it work work").word_count("work")).to(eq(2))
   end
 
 end
